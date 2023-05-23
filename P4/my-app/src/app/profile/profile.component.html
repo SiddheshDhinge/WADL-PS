@@ -1,0 +1,38 @@
+<div class="w-50 mx-auto p-5 my-5 rounded shadow">
+    <div class="text-center fs-1">
+        <b>Profile</b>
+    </div>
+    <hr>
+    <div>
+        <table class="w-100">
+            <tr>
+                <th> Name:</th>
+                <td>
+                    <code>{{user.name}}</code>
+                </td>
+            </tr>
+            <tr>
+                <th> Email:</th>
+                <td>
+                    <code>{{user.email}}</code>
+                </td>
+            </tr>
+            <tr>
+                <th> Username:</th>
+                <td>
+                    <code>{{user.username}}</code>
+                </td>
+            </tr>
+            <tr>
+                <th> Id:</th>
+                <td>
+                    <code>{{user.id}}</code>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <hr>
+    <div>
+        <button class="btn btn-danger" (click)="submitLogout()">Logout</button>
+    </div>
+</div>

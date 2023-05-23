@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <title>Gallery</title>
+</head>
+<body>
+    <div data-role="page">
+        <div data-role="header" style="text-align: center; font-size: 1.4em; padding: 15px;">
+            Gallery
+        </div>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="./index.html">Gallery</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./letter.html">Register for Newsletter</a></li>
+            </ul>
+        </div>
+        <div id="content" style="text-align: center;">
+            <img>
+            <img>
+            <img>
+            <img>
+            <img>
+            <img>
+        </div>
+        <div data-role="footer" style="text-align: center;">
+                <a href="./index.html" class="ui-btn ui-btn-inline">Gallery</a>
+                <a href="./about.html" class="ui-btn ui-btn-inline">About</a>
+                <a href="./letter.html" class="ui-btn ui-btn-inline">Register for Newsletter</a>
+        </div>
+    </div>
+    <script>
+        const img = document.getElementById("content").children;
+        for(let i=1;i<=img.length; i++)
+        {
+            img[i-1].src = `https://picsum.photos/200?t${i}`;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<div class="w-50 mx-auto p-5 my-5 rounded shadow">
+    <div class="text-center fs-1">
+        <b>Login</b>
+    </div>
+    <br>
+    <form (submit)="submitLogin(username.value, password.value)">
+        <input class="form-control" type="text" #username placeholder="Username" />
+        <br>
+        <input class="form-control" type="password" #password placeholder="Password" />
+        <br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <br><br>
+        <a href="/signup">Signup?</a>
+    </form>
+</div>
