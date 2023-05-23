@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main-container{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(255, 215, 215);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        th{
+            background-color: rgb(255, 217, 113);
+            color: red;
+            font-size: 1.5em;
+        }
+        td{
+            background-color: cyan;
+            padding: 5px 10px;
+        }
+        table, th, td {
+            border: 2px solid grey;
+            border-spacing: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <form>
+            <table>
+                <tr>
+                    <th colspan="2">User Form</th>
+                </tr>
+                <tr>
+                    <td>
+                        Enter Name
+                    </td>
+                    <td>
+                        <input name="name" type="text" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Enter Password
+                    </td>
+                    <td>
+                        <input name="password" type="password" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Enter address
+                    </td>
+                    <td>
+                        <textarea name="address" rows="4"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Select Game
+                    </td>
+                    <td>
+                        <input name="game" type="checkbox"/> Hockey <br>
+                        <input name="game" type="checkbox"/> Football <br>
+                        <input name="game" type="checkbox"/> Badminton <br>
+                        <input name="game" type="checkbox"/> Cricket <br>
+                        <input name="game" type="checkbox"/> Volleyball <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Gender
+                    </td>
+                    <td>
+                        <input name="gender" type="radio" checked /> Male
+                        <input name="gender" type="radio" /> Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Select ur age
+                    </td>
+                    <td>
+                        <select name="age">
+                            <option value="select">Select</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="file" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <button style="width: 30%; padding: 5px 10px;">Click Me</button>
+                        <button style="width: 30%; padding: 5px 10px;" type="reset">Reset</button>
+                        <button style="min-width: 30%; padding: 5px 10px;" type="submit">Submit form</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
